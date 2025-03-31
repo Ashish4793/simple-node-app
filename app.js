@@ -3,6 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     const currentTime = new Date().toLocaleString();
+    console.log(`Hello, Server! Current server time is: ${currentTime}`);
     res.send(`Hello, World! Current server time is: ${currentTime}`);
 });
 
